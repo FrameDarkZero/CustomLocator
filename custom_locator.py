@@ -128,9 +128,6 @@ class CustomLocator(object):
 
 if __name__ == "__main__":
     
-    # Clear any existing shader cache (optional)
-    # CustomLocator.clear_shader_cache()
-    
     spine_01 = CustomLocator(name="spine_01", side="L", orientation="x")
     spine_01 = spine_01.get_locator_name()
     
@@ -139,4 +136,5 @@ if __name__ == "__main__":
     
     spine_03 = CustomLocator(name="spine_03", side="R", orientation="z")
     spine_03 = spine_03.get_locator_name()
+
     
