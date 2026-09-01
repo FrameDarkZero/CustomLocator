@@ -130,7 +130,7 @@ class CustomLocator(object):
         cmds.setAttr(f"{obj}.rotate", 0, 0, 0, type="double3")
         cmds.setAttr(f"{obj}.scale", 1, 1, 1, type="double3")
         
-        print(f"Transferred {obj}'s local transform to offsetParentMatrix and reset transforms.")
+        # print(f"Transferred {obj}'s local transform to offsetParentMatrix and reset transforms.")
     
     def get_locator_name(self):
         return self.locator
@@ -148,9 +148,9 @@ if __name__ == "__main__":
     spine_01 = CustomLocator(name="spine_01", prefix="L", chain_name="back", orientation="x")
     spine_01 = spine_01.get_locator_name()
     
-    spine_02 = CustomLocator(name="spine_02", prefix=None, chain_name="back", orientation="y")
-    spine_02 = spine_02.get_locator_name()
+    # spine_02 = CustomLocator(name="spine_02", prefix=None, chain_name="back", orientation="y")
+    # spine_02 = spine_02.get_locator_name()
     
-    spine_03 = CustomLocator(name="spine_03", prefix="R", chain_name="back", orientation="z")
-    spine_03 = spine_03.get_locator_name()
+    # spine_03 = CustomLocator(name="spine_03", prefix="R", chain_name="back", orientation="z")
+    # spine_03 = spine_03.get_locator_name()
     
